@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function func() {
+            this.value = Number(this.value) + 1;
+        };
+
+        let elems = document.querySelectorAll('.elemIn');
+        let butt = document.querySelector('#button1');
+        for (let elem of elems) {
+            elem.addEventListener('blur', func);
+        }; 
+
+    </script>
+    
+</body>
+</html>
